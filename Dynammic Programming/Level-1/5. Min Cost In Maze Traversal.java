@@ -49,13 +49,13 @@ public class Main {
             for(int j=0; j<m; j++)
                 arr[i][j] = scn.nextInt();
         
-        // int[][] dp = new int[n][m];
+         int[][] dp = new int[n][m];
         
-        // for(int i=0; i<n; i++){
-        //     Arrays.fill(dp[i], -1);
-        // }
+         for(int i=0; i<n; i++){
+             Arrays.fill(dp[i], -1);
+         }
         
-        // System.out.println(minCostMemo(0, 0, n-1, m-1, arr, dp));
+        System.out.println(minCostMemo(0, 0, n-1, m-1, arr, dp));
         System.out.println(minCostTab(arr));
     }
     
